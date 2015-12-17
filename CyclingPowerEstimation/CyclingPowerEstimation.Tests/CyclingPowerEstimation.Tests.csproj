@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2217E9FB-B0B9-4020-8AF8-A953CDA6F654}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CyclingPowerEstimation.Tests</RootNamespace>
+    <AssemblyName>CyclingPowerEstimation.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GMap.NET.Core, Version=1.7.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CyclingPowerEstimation\bin\Debug\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms, Version=1.7.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CyclingPowerEstimation\bin\Debug\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ExtendedReflection">
+      <HintPath>..\..\..\..\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Pex\Microsoft.ExtendedReflection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Pex.Framework">
+      <HintPath>..\..\..\..\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Pex\Microsoft.Pex.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CyclingPowerEstimation\CyclingPowerEstimation.csproj">
+      <Project>{552D1A95-4F6D-47EA-93D0-FBA0AB79FF9C}</Project>
+      <Name>CyclingPowerEstimation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccelerationTest.Constructor.g.cs">
+      <DependentUpon>AccelerationTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccelerationTest.cs" />
+    <Compile Include="AccelerationTest.IsUnknownGet.g.cs">
+      <DependentUpon>AccelerationTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccelerationTest.MetersPerSecondPerSecondGet.g.cs">
+      <DependentUpon>AccelerationTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccelerationTest.MetersPerSecondPerSecondSet.g.cs">
+      <DependentUpon>AccelerationTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccelerationTest.op_Addition.g.cs">
+      <DependentUpon>AccelerationTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccelerationTest.op_Division.g.cs">
+      <DependentUpon>AccelerationTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccelerationTest.op_Implicit.g.cs">
+      <DependentUpon>AccelerationTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccelerationTest.op_Subtraction.g.cs">
+      <DependentUpon>AccelerationTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AngleTest.Constructor.g.cs">
+      <DependentUpon>AngleTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AngleTest.cs" />
+    <Compile Include="AngleTest.DegreesGet.g.cs">
+      <DependentUpon>AngleTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AngleTest.FromDegrees.g.cs">
+      <DependentUpon>AngleTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AngleTest.IsUnknownGet.g.cs">
+      <DependentUpon>AngleTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AngleTest.op_Addition.g.cs">
+      <DependentUpon>AngleTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AngleTest.op_Division.g.cs">
+      <DependentUpon>AngleTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AngleTest.op_Implicit.g.cs">
+      <DependentUpon>AngleTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AngleTest.op_Subtraction.g.cs">
+      <DependentUpon>AngleTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AngleTest.RadiansGet.g.cs">
+      <DependentUpon>AngleTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AngleTest.RadiansSet.g.cs">
+      <DependentUpon>AngleTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CsvDataSegmentWriterTest.Constructor.g.cs">
+      <DependentUpon>CsvDataSegmentWriterTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CsvDataSegmentWriterTest.cs" />
+    <Compile Include="CsvDataSegmentWriterTest.Write.g.cs">
+      <DependentUpon>CsvDataSegmentWriterTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPointTest.AscentToPoint.g.cs">
+      <DependentUpon>DataPointTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPointTest.Constructor.g.cs">
+      <DependentUpon>DataPointTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPointTest.cs" />
+    <Compile Include="DataPointTest.DistanceToPoint.g.cs">
+      <DependentUpon>DataPointTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPointTest.GradientToPoint.g.cs">
+      <DependentUpon>DataPointTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPointTest.HaversineDistanceToPoint.g.cs">
+      <DependentUpon>DataPointTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSegmentTest.AccelerationGet.g.cs">
+      <DependentUpon>DataSegmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSegmentTest.AltitudeGet.g.cs">
+      <DependentUpon>DataSegmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSegmentTest.CadenceGet.g.cs">
+      <DependentUpon>DataSegmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSegmentTest.Calculate.g.cs">
+      <DependentUpon>DataSegmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSegmentTest.Constructor.g.cs">
+      <DependentUpon>DataSegmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSegmentTest.cs" />
+    <Compile Include="DataSegmentTest.ElapsedTimeGet.g.cs">
+      <DependentUpon>DataSegmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSegmentTest.GradientGet.g.cs">
+      <DependentUpon>DataSegmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSegmentTest.HeartRateGet.g.cs">
+      <DependentUpon>DataSegmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSegmentTest.LatitudeGet.g.cs">
+      <DependentUpon>DataSegmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSegmentTest.LengthGet.g.cs">
+      <DependentUpon>DataSegmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSegmentTest.LongitudeGet.g.cs">
+      <DependentUpon>DataSegmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSegmentTest.PowerGet.g.cs">
+      <DependentUpon>DataSegmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSegmentTest.SpeedGet.g.cs">
+      <DependentUpon>DataSegmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSegmentTest.TotalForceGet.g.cs">
+      <DependentUpon>DataSegmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DistanceTest.Constructor.g.cs">
+      <DependentUpon>DistanceTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DistanceTest.cs" />
+    <Compile Include="DistanceTest.IsUnknownGet.g.cs">
+      <DependentUpon>DistanceTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DistanceTest.KilometersGet.g.cs">
+      <DependentUpon>DistanceTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DistanceTest.MetersGet.g.cs">
+      <DependentUpon>DistanceTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DistanceTest.MetersSet.g.cs">
+      <DependentUpon>DistanceTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DistanceTest.MilesGet.g.cs">
+      <DependentUpon>DistanceTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DistanceTest.op_Addition.g.cs">
+      <DependentUpon>DistanceTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DistanceTest.op_Division01.g.cs">
+      <DependentUpon>DistanceTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DistanceTest.op_Implicit.g.cs">
+      <DependentUpon>DistanceTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DistanceTest.op_Subtraction.g.cs">
+      <DependentUpon>DistanceTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForceTest.Constructor.g.cs">
+      <DependentUpon>ForceTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForceTest.cs" />
+    <Compile Include="ForceTest.IsUnknownGet.g.cs">
+      <DependentUpon>ForceTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForceTest.NewtonsGet.g.cs">
+      <DependentUpon>ForceTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForceTest.NewtonsSet.g.cs">
+      <DependentUpon>ForceTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForceTest.op_Addition.g.cs">
+      <DependentUpon>ForceTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForceTest.op_Division.g.cs">
+      <DependentUpon>ForceTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForceTest.op_Implicit.g.cs">
+      <DependentUpon>ForceTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForceTest.op_Multiply.g.cs">
+      <DependentUpon>ForceTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForceTest.op_Subtraction.g.cs">
+      <DependentUpon>ForceTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrequencyTest.Constructor.g.cs">
+      <DependentUpon>FrequencyTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrequencyTest.cs" />
+    <Compile Include="FrequencyTest.IsUnknownGet.g.cs">
+      <DependentUpon>FrequencyTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrequencyTest.op_Addition.g.cs">
+      <DependentUpon>FrequencyTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrequencyTest.op_Division.g.cs">
+      <DependentUpon>FrequencyTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrequencyTest.op_Implicit.g.cs">
+      <DependentUpon>FrequencyTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrequencyTest.op_Subtraction.g.cs">
+      <DependentUpon>FrequencyTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrequencyTest.PerMinuteGet.g.cs">
+      <DependentUpon>FrequencyTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrequencyTest.PerMinuteSet.g.cs">
+      <DependentUpon>FrequencyTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeolocationTest.Constructor.g.cs">
+      <DependentUpon>GeolocationTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeolocationTest.Constructor01.g.cs">
+      <DependentUpon>GeolocationTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeolocationTest.cs" />
+    <Compile Include="PowerTest.Constructor.g.cs">
+      <DependentUpon>PowerTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PowerTest.cs" />
+    <Compile Include="PowerTest.op_Addition.g.cs">
+      <DependentUpon>PowerTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PowerTest.op_Division.g.cs">
+      <DependentUpon>PowerTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PowerTest.op_Implicit.g.cs">
+      <DependentUpon>PowerTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PowerTest.op_Subtraction.g.cs">
+      <DependentUpon>PowerTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PowerTest.WattsGet.g.cs">
+      <DependentUpon>PowerTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PowerTest.WattsSet.g.cs">
+      <DependentUpon>PowerTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\PexAssemblyInfo.cs" />
+    <Compile Include="RealityTest.AirDensity.g.cs">
+      <DependentUpon>RealityTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RealityTest.CoefficientOfRollingResistanceGet.g.cs">
+      <DependentUpon>RealityTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RealityTest.CoefficientOfRollingResistanceSet.g.cs">
+      <DependentUpon>RealityTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RealityTest.Constructor.g.cs">
+      <DependentUpon>RealityTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RealityTest.cs" />
+    <Compile Include="RealityTest.DragCoefficientGet.g.cs">
+      <DependentUpon>RealityTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RealityTest.DragCoefficientSet.g.cs">
+      <DependentUpon>RealityTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RealityTest.EffectiveFrontalAreaGet.g.cs">
+      <DependentUpon>RealityTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RealityTest.EffectiveFrontalAreaSet.g.cs">
+      <DependentUpon>RealityTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RealityTest.PressureAtAltitude.g.cs">
+      <DependentUpon>RealityTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RealityTest.TemperatureGet.g.cs">
+      <DependentUpon>RealityTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RealityTest.TemperatureSet.g.cs">
+      <DependentUpon>RealityTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RiderTest.Constructor.g.cs">
+      <DependentUpon>RiderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RiderTest.cs" />
+    <Compile Include="RiderTest.MassIncludingBikeGet.g.cs">
+      <DependentUpon>RiderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RouteMarkerTest.Constructor.g.cs">
+      <DependentUpon>RouteMarkerTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RouteMarkerTest.cs" />
+    <Compile Include="SpeedTest.Constructor.g.cs">
+      <DependentUpon>SpeedTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpeedTest.cs" />
+    <Compile Include="SpeedTest.IsUnknownGet.g.cs">
+      <DependentUpon>SpeedTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpeedTest.KilometersPerHourGet.g.cs">
+      <DependentUpon>SpeedTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpeedTest.MetersPerSecondGet.g.cs">
+      <DependentUpon>SpeedTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpeedTest.MetersPerSecondSet.g.cs">
+      <DependentUpon>SpeedTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpeedTest.op_Addition.g.cs">
+      <DependentUpon>SpeedTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpeedTest.op_Division01.g.cs">
+      <DependentUpon>SpeedTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpeedTest.op_Implicit.g.cs">
+      <DependentUpon>SpeedTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpeedTest.op_Subtraction.g.cs">
+      <DependentUpon>SpeedTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TcxDataSegmentReaderTest.Constructor.g.cs">
+      <DependentUpon>TcxDataSegmentReaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TcxDataSegmentReaderTest.cs" />
+    <Compile Include="TcxDataSegmentReaderTest.Dispose.g.cs">
+      <DependentUpon>TcxDataSegmentReaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TcxDataSegmentWriterTest.Constructor.g.cs">
+      <DependentUpon>TcxDataSegmentWriterTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TcxDataSegmentWriterTest.cs" />
+    <Compile Include="TcxDataSegmentWriterTest.Dispose.g.cs">
+      <DependentUpon>TcxDataSegmentWriterTest.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
